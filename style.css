@@ -27,6 +27,12 @@ select {
   margin: 20px 0;
   display: flex;
   justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px dashed grey;
+}
+
+.city:last-child {
+  border-bottom: none;
 }
 
 h2 {
@@ -40,7 +46,7 @@ h2 {
 }
 
 .time {
-  font-size: 25px;
+  font-size: 40px;
   font-weight: bold;
 }
 
