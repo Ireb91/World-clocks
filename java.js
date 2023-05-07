@@ -1,21 +1,37 @@
 function updateTime() {
   let TokyoCityElement = document.querySelector("#tokyo");
-  let TokyoDateElement = TokyoCityElement.querySelector(".date");
-  let TokyoTimeElement = TokyoCityElement.querySelector(".time");
-  let TokyoCurrentTime = moment().tz("Asia/Tokyo");
-  TokyoDateElement.innerHTML = TokyoCurrentTime.format("dddd MMMM Do YYYY");
-  TokyoTimeElement.innerHTML = TokyoCurrentTime.format(
-    "h:mm:ss [<small>]A[<small>]"
-  );
+  if (TokyoCityElement) {
+    let TokyoDateElement = TokyoCityElement.querySelector(".date");
+    let TokyoTimeElement = TokyoCityElement.querySelector(".time");
+    let TokyoCurrentTime = moment().tz("Asia/Tokyo");
+    TokyoDateElement.innerHTML = TokyoCurrentTime.format("dddd MMMM Do YYYY");
+    TokyoTimeElement.innerHTML = TokyoCurrentTime.format(
+      "h:mm:ss [<small>]A[<small>]"
+    );
+  }
 
   let LondonCityElement = document.querySelector("#london");
-  let LondonDateElement = LondonCityElement.querySelector(".date");
-  let LondonTimeElement = LondonCityElement.querySelector(".time");
-  let LondonCurrentTime = moment().tz("Europe/London");
-  LondonDateElement.innerHTML = LondonCurrentTime.format("dddd MMMM Do YYYY");
-  LondonTimeElement.innerHTML = LondonCurrentTime.format(
-    "h:mm:ss [<small>]A[<small>]"
-  );
+  if (LondonCityElement) {
+    let LondonDateElement = LondonCityElement.querySelector(".date");
+    let LondonTimeElement = LondonCityElement.querySelector(".time");
+    let LondonCurrentTime = moment().tz("Europe/London");
+    LondonDateElement.innerHTML = LondonCurrentTime.format("dddd MMMM Do YYYY");
+    LondonTimeElement.innerHTML = LondonCurrentTime.format(
+      "h:mm:ss [<small>]A[<small>]"
+    );
+  }
+
+  let IstanbulCityElement = document.querySelector("#istanbul");
+  if (IstanbulCityElement) {
+    let IstanbulDateElement = IstanbulCityElement.querySelector(".date");
+    let IstanbulTimeElement = IstanbulCityElement.querySelector(".time");
+    let IstanbulCurrentTime = moment().tz("Europe/Istanbul");
+    IstanbulDateElement.innerHTML =
+      IstanbulCurrentTime.format("dddd MMMM Do YYYY");
+    IstanbulTimeElement.innerHTML = IstanbulCurrentTime.format(
+      "h:mm:ss [<small>]A[<small>]"
+    );
+  }
 }
 
 function updateCity(event) {
@@ -35,7 +51,10 @@ function updateCity(event) {
     <div class="time">${cityTime.format("h:mm:ss ")}<small>${cityTime.format(
     "A"
   )}</small></div>
-  </div>`;
+  </div>
+  <a href="index.html">To all cities</a>`;
+  let body = document.querySelector("body");
+  body.classList.add("big");
 }
 
 updateTime();

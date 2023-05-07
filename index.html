@@ -9,7 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-1970-2030.js"></script>
     <title>World-clocks</title>
   </head>
-  <body>
+  <body id="body">
     <div class="container">
       <h1>World clocks</h1>
       <select name="cities" id="city">
@@ -23,14 +23,21 @@
       <div id="cities">
         <div class="city" id="tokyo">
           <div>
-            <h2>Tokyo</h2>
+            <h2 class="name">Tokyo</h2>
             <div class="date"></div>
           </div>
           <div class="time"></div>
         </div>
         <div class="city" id="london">
           <div>
-            <h2>London</h2>
+            <h2 class="name">London</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+        <div class="city" id="istanbul">
+          <div>
+            <h2 class="name">Istanbul</h2>
             <div class="date"></div>
           </div>
           <div class="time"></div>

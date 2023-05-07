@@ -1,9 +1,9 @@
 body {
-  background-color: #eeeeee;
+  background-color: #f2f2f2;
 }
 
 .container {
-  margin: 30px auto;
+  margin: 40px auto;
   max-width: 600px;
   background-color: white;
   padding: 20px 30px;
@@ -13,6 +13,8 @@ body {
 }
 
 h1 {
+  color: #222831;
+  font-size: 40px;
   text-align: center;
 }
 
@@ -21,6 +23,7 @@ select {
   width: 100%;
   font-size: 15px;
   border-radius: 5px;
+  border: 1.5px solid;
 }
 
 .city {
@@ -36,13 +39,15 @@ select {
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 30px;
   margin: 0;
+  color: #ef4339;
 }
 
 .date {
+  color: black;
   margin-top: 8px;
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 .time {
@@ -58,4 +63,12 @@ small {
 footer {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.big .container {
+  padding-bottom: 50px;
+}
+
+.big .city {
+  border-bottom: none;
 }
