@@ -46,6 +46,7 @@ h2 {
 
 .date {
   color: black;
+  font-size: 18px;
   margin-top: 8px;
   opacity: 0.9;
 }
@@ -71,4 +72,8 @@ footer {
 
 .big .city {
   border-bottom: none;
+}
+
+a {
+  margin-left: 10px;
 }
